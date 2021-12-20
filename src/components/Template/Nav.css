@@ -1,0 +1,45 @@
+.menu-area {
+    background-color: var(--bg-dark);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.12);
+    
+    
+}
+
+
+.menu a {
+    margin-top: 10px;
+    
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 15px;
+}
+
+.menu a:hover {
+    
+    background: linear-gradient(to right,#b92b27,#1565C0);
+    
+}
+
+
+@media(max-width: 768px) {
+    .menu-area {
+        height: 100%;
+        justify-content: space-around;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 12px;
+       
+    }
+
+    .menu a {
+        display: inline;
+        padding: 10px;
+    }
+    
+}
+

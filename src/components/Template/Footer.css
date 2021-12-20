@@ -1,0 +1,29 @@
+footer.footer {
+    height: var(--footer-height);
+    background-color: white;
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+}
+
+
+footer.footer span {
+    padding: 0 5px;
+}
+
+footer.footer strong {
+    padding: 0 4px;
+}
+
+a#linkInsta {
+    text-decoration: none;
+    color: black;
+    
+}
+
+a#linkInsta:hover {
+    transition: 320ms;
+    padding: 2px;
+}
+
