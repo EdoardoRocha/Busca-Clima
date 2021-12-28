@@ -5,6 +5,7 @@ footer.footer {
     display: flex;
     justify-content: flex-end;
     padding: 12px;
+    overflow: hidden;
 }
 
 

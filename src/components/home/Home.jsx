@@ -89,9 +89,6 @@ function Home(props) {
     date.textContent = `${day} de ${monthName} de ${year}`;
     tempMax.textContent = Math.floor(clima.data.main.temp_max) + " °C";
     tempMin.textContent = Math.floor(clima.data.main.temp_min) + " °C";
-
-    console.log(clima);
-    console.log(icon);
   }
 
   return (

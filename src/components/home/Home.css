@@ -1,286 +1,190 @@
-#contentTitle {
-    text-indent: 20px;
-
-}
-/*
-
-.tempNow {
-    font-size: 2.9em;
-    color: black;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: skyblue;
-    box-shadow: 5px 5px 0px rgba(100, 67, 67, 0.432);
-    border-radius: 12px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-
-}
-
-
 .tempCamp {
-    color: black;
-    background-color: #ebebeb;
-    max-width: 350px;
-    min-width: 110px;
-    border-radius: 0 0 12px 12px;
-    box-shadow: 8px 0px 5px rgba(0, 0, 0, 0.486);
-    font-weight: bold;
-    padding: 12px;
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-
-
-
-.city {
-    
-    color: black;
-    font-size: 1.9em;
-    text-align: center;
-    font-weight: bold;
-    display: block;
-    margin: auto;
-    border-bottom: 2px solid skyblue;
-    border-radius: 12px 12px 0 0 ;
-    background-color: #ebebeb;
-    max-width: 350px;
-    min-width: 110px;
-    box-shadow: 8px 0 5px rgba(0, 0, 0, 0.486);
-    overflow: hidden;
-}
-
-
-.description {
-    font-weight: bold;
-    font-size: 1.7em;
-}
-
-.iconClimate img {
-    animation: flipImage 520ms;
-    width: 100%;
-}
-
-@keyframes flipImage {
-    from {
-        transform: rotateX(90deg);
-    }
-
-    to {
-        transform: rotateX(0);
-    }
-}
-*/
-
-
-
-.tempCamp {
-    display: flex;
-    background-color: #ebebeb;
-    padding: 12px;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: 12px;
-    width: 100%;
+  display: flex;
+  background-color: #ebebeb;
+  padding: 12px;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 100%;
 }
 
 .city {
-    font-size: 1.2em;
-    font-weight: bold;
-    text-indent: 5px;
-    margin-bottom: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-indent: 5px;
+  margin-bottom: 5px;
 }
 
 .iconClimate {
-    width: 20%;
-    margin-top: 12px;
-    padding: 12px;
-    border: 3px solid white;
-    background-color: #f1f4f5;
-    align-self: flex-start;
-    animation: flipImage 0.5s;
-    border-radius: 100%;
-    
+  width: 20%;
+  margin-top: 12px;
+  padding: 12px;
+  border: 3px solid white;
+  background-color: #f1f4f5;
+  align-self: flex-start;
+  animation: flipImage 0.5s;
+  border-radius: 100%;
 }
 .iconClimate img {
-    width: 100%;
-    position: relative;
-    height: 100%;
-    margin: 0 auto;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .description {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    justify-self: flex-start;
-
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-self: flex-start;
 }
 
 .icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .tempNow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f4f5;
-    width: 20%;
-    height: 20vh;
-    padding: 12px;
-    flex-direction: column;
-    border-radius: 100%;
-    text-align: center;
-    border: 3px solid white;
-    font-size: 1.9em;
-    font-weight: bold;
-    animation: flipImage 0.5s;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f4f5;
+  width: 20%;
+  height: 20vh;
+  padding: 12px;
+  flex-direction: column;
+  border-radius: 100%;
+  text-align: center;
+  border: 3px solid white;
+  font-size: 1.9em;
+  font-weight: bold;
+  animation: flipImage 0.5s;
 }
 
 .descripts {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .description {
-    display: inline;
-    margin-top: 5px;
-    font-size: 1.2em;
-    font-style: italic;
-    font-weight: 500;
+  display: inline;
+  margin-top: 5px;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 500;
 }
 
-
 .MaxEMin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f1f4f5;
-    width: 20%;
-    border-radius: 100%;
-    padding: 12px;
-    height: 20vh;
-    animation: flipImage 0.5s;
-    border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f4f5;
+  width: 20%;
+  border-radius: 100%;
+  padding: 12px;
+  height: 20vh;
+  animation: flipImage 0.5s;
+  border: 3px solid white;
 }
 
 .tempVariable {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-    font-style: italic;
-    font-weight: 550;
-    font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  font-style: italic;
+  font-weight: 550;
+  font-size: 1.2em;
 }
 
 .date {
-    
-    flex-direction: column;
-    justify-self: flex-end;
-    align-self: flex-end;
-    
+  flex-direction: column;
+  justify-self: flex-end;
+  align-self: flex-end;
 }
 
 @keyframes flipImage {
-    from {
-        transform: rotateX(90deg);
-    }
+  from {
+    transform: rotateX(90deg);
+  }
 
-    to {
-        transform: rotateX(0);
-    }
+  to {
+    transform: rotateX(0);
+  }
 }
 
+@media (max-width: 1073px) {
+  .tempCamp {
+    display: flex;
+    margin: auto;
+    width: 50%;
+  }
 
-@media(max-width: 1073px) {
-    .tempCamp {
-        display: flex;
-        margin: auto;
-        width: 50%;
+  .city {
+    font-size: 1.1em;
+  }
 
-    }
+  .icons {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .city {
-        font-size: 1.1em;
-        
-    }
+  .icons .iconClimate {
+    align-self: center;
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
 
-    .icons {
-        display: flex;
-        flex-direction: column;
-        
-    }
+  .icons .tempNow {
+    display: flex;
+    position: relative;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.7em;
+    width: 140px;
+    height: 80px;
+    padding: 5px;
+    margin: 12px 0 12px 0;
+    align-self: center;
+    background: linear-gradient(to bottom, #1fa2ff, #12d8fa, #a6ffcb);
+  }
 
-    .icons .iconClimate {
-        align-self: center;
-        position: relative;
-        width: 50%;
-        height: 100%;
-    }
+  .icons .MaxEMin {
+    border: none;
+    position: relative;
+    display: flex;
+    height: 80px;
+    width: 140px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
 
-    .icons .tempNow {
-        display: flex;
-        position: relative;
-        border: none;
-        border-radius: 12px;
-        font-size: 1.7em;
-        width: 140px;
-        height: 80px;
-        padding: 5px;
-        margin: 12px 0 12px 0;
-        align-self: center;
-        background: linear-gradient(to bottom ,#1FA2FF,#12D8FA,#A6FFCB)
-    }
+  .icons .MaxEMin span {
+    position: relative;
+    font-size: 10px;
+    flex-direction: row;
+  }
 
+  .icons .MaxEMin .tempMax {
+    margin-right: 6px;
+  }
 
-    .icons .MaxEMin {
-        border: none;
-        position: relative;
-        display: flex;
-        height: 80px;
-        width: 140px;
-        border-radius: 12px;
-        font-size: 1.0rem;
-        font-weight: 400;
-    }
+  .icons .MaxEMin .tempMin {
+    margin-left: 6px;
+  }
 
+  .descripts .description {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 
-    .icons .MaxEMin span {
-        position: relative;
-        font-size: 10px;
-        flex-direction: row;
-        
-    }
-
-
-    .icons .MaxEMin .tempMax {
-        margin-right: 6px;
-    }
-
-    .icons .MaxEMin .tempMin {
-        margin-left: 6px;
-    }
-
-     .descripts .description {
-        font-size: 1.0rem;
-        font-weight: 600;
-    }
-
-    .date {
-        font-size: 1.0rem;
-        letter-spacing: 1px;
-        margin-top: 12px;
-        
-    }
+  .date {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 12px;
+  }
 }
