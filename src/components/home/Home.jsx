@@ -31,7 +31,7 @@ function Home(props) {
     const city = document.querySelector(".city");
     const date = document.querySelector(".date");
     const desc = document.querySelector(".description");
-    const tempNow = document.querySelector(".tempNow");
+    const tempNowContent = document.querySelector(".tempNowContent");
     const tempMax = document.querySelector(".tempMax");
     const tempMin = document.querySelector(".tempMin");
 
@@ -85,7 +85,7 @@ function Home(props) {
 
     city.textContent = `${clima.data.name},${clima.data.sys.country}`;
     desc.textContent = `Desc: ${clima.data.weather[0].description}`;
-    tempNow.textContent = Math.floor(clima.data.main.temp) + " °C ";
+    tempNowContent.textContent = Math.floor(clima.data.main.temp) + " °C ";
     date.textContent = `${day} de ${monthName} de ${year}`;
     tempMax.textContent = Math.floor(clima.data.main.temp_max) + " °C";
     tempMin.textContent = Math.floor(clima.data.main.temp_min) + " °C";
@@ -115,7 +115,7 @@ function Home(props) {
           <div className="iconClimate">
             <img src={require(`../../Assets/icons/${icon}.png`)} alt="Teste" />
           </div>
-          <div className="tempNow"></div>
+          <div className="tempNow"><p className="tempNowContent"></p></div>
           <div className="MaxEMin">
             <span className="tempVariable">
               Max

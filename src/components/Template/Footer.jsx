@@ -5,14 +5,12 @@ function Footer(props) {
   return (
     <Fragment>
       <footer className="footer">
-        Desenvolvido com{" "}
+        Desenvolvido com
         <span className="text-danger">
-          {" "}
-          <i className="fa fa-heart"></i>{" "}
-        </span>{" "}
-        por{" "}
+          <i className="fa fa-heart v-middle"></i>
+        </span>
+          por
         <strong>
-          {" "}
           <a
             id="linkInsta"
             href="https://instagram.com/pensandoem.js"
@@ -20,7 +18,7 @@ function Footer(props) {
             rel="noreferrer"
           >
             @pensandoem.js
-          </a>{" "}
+          </a>
         </strong>
       </footer>
     </Fragment>

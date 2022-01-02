@@ -28,3 +28,6 @@ a#linkInsta:hover {
     padding: 2px;
 }
 
+.v-middle {
+    vertical-align: middle;
+}

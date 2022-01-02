@@ -9,7 +9,7 @@ const headerProps = {
 };
 
 const initialState = {
-  city: { NameCity: "", uf: "" },
+  city: { NameCity: "" },
   dataWeather: "",
 };
 
@@ -38,7 +38,7 @@ class getClima extends Component {
   }
 
   async getWeatherData() {
-    if (this.state.city.NameCity === "" || this.state.city.uf === "") {
+    if (this.state.city.NameCity === "") {
       alert("Porfavor preencha os campos abaixo.");
       return;
     }
@@ -63,13 +63,13 @@ class getClima extends Component {
     if (response === "") {
       return;
     } else {
-      const tempNow = Math.floor(response.data.main.temp);
-      const tempMin = Math.floor(response.data.main.temp_min);
-      const tempMax = Math.floor(response.data.main.temp_max);
+      const tempNow = Math.round(response.data.main.temp);
+      const tempMin = Math.round(response.data.main.temp_min);
+      const tempMax = Math.round(response.data.main.temp_max);
       const description = response.data.weather[0].description;
       const icon = response.data.weather[0].icon;
       const NameCity = response.data.name;
-      const country = this.state.city.uf
+      const country = response.data.sys.country;
 
       return (
         <div className="tempCamp col-6 col-sm-12">
@@ -158,7 +158,7 @@ class getClima extends Component {
   renderInput() {
     return (
       <React.Fragment>
-        <label className="mb-">Cidade</label>
+        <label>Cidade</label>
 
         <input
           type="text"
@@ -166,17 +166,6 @@ class getClima extends Component {
           className="form-control"
           placeholder="Insira a cidade aqui..."
           value={this.state.city.NameCity}
-          onChange={(e) => this.updateField(e)}
-        />
-
-        <label className=" mt-3">Estado</label>
-
-        <input
-          type="text"
-          name="uf"
-          className="form-control"
-          placeholder="Insira o Estado/UF aqui..."
-          value={this.state.city.uf}
           onChange={(e) => this.updateField(e)}
         />
 
